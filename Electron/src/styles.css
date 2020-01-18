@@ -1,0 +1,245 @@
+#wrapper {
+	padding-left: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	box-sizing: border-box;
+}
+.toggled {
+	width: 100%;
+}
+
+p, label, h1, h2, h3{
+	font-size: 20px;
+	color: black;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#sidebar-wrapper {
+	z-index: 1000;
+	position: fixed;
+	width: 0;
+	height: 100%;
+	overflow-y: auto;
+	background-color: rgba(0, 0, 0, 1);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#page-content-wrapper {
+	width: 100%;
+	position: absolute;
+	padding: 15px;
+}
+
+.toggled2 {
+	position: absolute;
+}
+
+.sidebar-nav {
+	position: absolute;
+	top: 0;
+	width: 250px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar-nav li {
+	text-indent: 20px;
+	line-height: 40px;
+}
+
+.sidebar-nav li a,
+.sidebar-nav li a p {
+	display: block;
+	text-decoration: none;
+	color: #B81601;
+	font-size: 20px;
+}
+
+.sidebar-nav li button {
+	background-color: transparent;
+	border:none;
+}
+
+.sidebar-nav li a:hover {
+	text-decoration: none;
+	color: #B81601;
+	background: #062f4f;
+	cursor: pointer;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+	text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+	height: 65px;
+	font-size: 18px;
+	line-height: 60px;
+}
+
+	#wrapper.toggled {
+		padding-left: 0;
+	}
+	#sidebar-wrapper {
+		width: 250px;
+	}
+	#wrapper.toggled #sidebar-wrapper {
+		width: 0;
+	}
+	#page-content-wrapper {
+		padding: 20px;
+		position: relative;
+	}
+	#wrapper.toggled #page-content-wrapper {
+		position: relative;
+		margin-right: 0;
+	}
+	footer {
+		width: 100%;
+	}
+	.releaser {
+		margin-top: 15%;
+	}
+
+	html,
+	body {
+		width: 100%;
+		height: 40%;
+		background-color: #B81601;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.holder {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
+
+	.Sidebar {
+		clear: both;
+		float: left;
+		border-style: solid;
+		border-color: black;
+		border-width: 1px;
+		border-collapse: collapse;
+		background-color: black;
+		width: 150px;
+		height: inherit;
+	}
+	.Sidebar a {
+		float: left;
+		padding: 15px;
+	}
+
+	h6 {
+		font-weight: bold;
+		margin-top: 2px;
+	}
+	.keeper
+	{
+		margin-left: 300px;
+		color:black;
+		float: left;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+	.message
+	{
+		background-color: black;
+		width: 350px;
+		height: 150px;
+		font-size: 20px;
+		border-radius: 18px;
+		margin-left: -175px;
+		margin-top: -75px;
+		color: #B81601;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}
+	.message button
+	{
+		background-color: #B81601;
+		color: black;
+		width: 50px;
+		margin-top: -25px;
+		margin-left: 275px;
+	}
+	.message p {
+		margin-left: 50px;
+	}
+	.keeper2
+	{
+		margin-left: 50px;
+		color:black;
+		float: left;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+	.togglebutton
+    {
+        float:left;
+        display: block;
+        visibility: visible;
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        border:none;
+        position: relative;
+        margin: 0;
+        margin-right:50px;
+    }   
+    .togglebutton img
+    {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        display: inline-block;
+    }
+    .togglebutton2 
+    {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        visibility: hidden;
+        margin-right:15px;
+        float:left;
+        background-color: transparent;
+    }
+	li button{
+		float: right;
+        font-size:20px;
+        color:#B81601;
+        margin-right:5px;
+        margin-top:10px;
+	}
+	.toggled {
+		width: 100%;
+	}
+
+	.panel label, p, input, button {
+		background: black;
+		padding: 10px;
+		border: none;
+		color:#B81601;
+		font-size: 20px;
+		border-radius: 18px;
+		margin: 15px;
+	}
+	label input{
+		visibility: hidden;
+		display: none;
+	}

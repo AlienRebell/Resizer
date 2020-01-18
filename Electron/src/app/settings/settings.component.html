@@ -1,0 +1,21 @@
+<div>
+  <div>
+    <div>
+      <form [formGroup]="settings">
+        <h2>Choose the file type in which the file shouldf be saved</h2>
+        <label for="png">PNG</label>
+        <input type="radio" name="filetype" formControlName="filetype" id="png" value="PNG" />
+        <label for="jpeg">JPG</label>
+        <input type="radio" name="filetype" formControlName="filetype" id="jpeg" value="JPEG" />
+        <label for="gif">GIF</label>
+        <input type="radio" name="filetype" formControlName="filetype" id="gif" value="GIF" />
+        <h2>Choose image (or photo) source</h2>
+        <label for="internalStorage">Device</label>
+        <input type="radio" name="fileSource" formControlName="fileSource" id="internalStorage" value="internalStorage" />
+        <label for="web">Link</label>
+        <input type="radio" name="fileSource" formControlName="fileSource"  id="web" value="web" />
+      </form>
+      <button (click)="saveSettings()">Save Settings</button>
+    </div>
+  </div>
+</div>

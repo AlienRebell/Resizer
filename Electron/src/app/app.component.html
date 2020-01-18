@@ -1,0 +1,22 @@
+<div #Sidebar id="wrapper" class="toggled">
+    <nav>
+        <a #menu class="togglebutton" (click)="closeSidebar()"><img src="./assets/icons/hamburgermenu.png"></a>
+    </nav>
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <button type="button" class="close" aria-label="Close" (click)="openSidebar()"><span aria-hidden="true">&times;&ensp;</span></button>
+      </li>
+      <li>
+        <p><a (click)="settings()">To settings</a></p>
+      </li>
+      <li>
+        <p><a (click)="toMainScreen()">To MainScreen</a></p>
+      </li>
+    </ul>  
+  </div> 
+  <div #container class="keeper2">
+    <router-outlet></router-outlet>
+  </div>
+    
+</div>

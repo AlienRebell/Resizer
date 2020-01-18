@@ -1,0 +1,14 @@
+<div class="panel">
+  <form #form="ngForm" (ngSubmit)="WorkOffData(form)">
+    <div *ngIf="this.sourceType === 'web'">
+      <label>Enter picture Url</label>
+      <input name="web" [(ngModel)]="this.webAddress" type="text" placeholder="Enter here..."/>
+    </div>
+    <div *ngIf="this.sourceType === 'internalStorage'">
+      <p>Button below will open a dialog where you can give an image you want to edit</p>
+      <label class="custom-file-upload">Click here:
+      <input type="file" name="fileInput" (change)="upload($event)"/></label>
+    </div>
+    <button type="submit" expand="block">Proceed</button>
+  </form>
+</div>

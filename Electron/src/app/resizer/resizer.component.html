@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="panel"> 
+    <div class="panel1">
+      <label for="width">Width</label>
+      <input type="number" MIN="0" id="width" name="width" #width/>
+    </div>
+    <div class="panel2" >
+      <label for="height">Height</label>
+      <input type="number" MIN="0" id="height" name="height" #height/>
+    </div>
+    <div class="panel3" >
+      <button (click)="setValues()">Set Values</button>
+      <button type="submit" (click)="saveAs()">Save File</button>
+    </div>
+    <div class="image" [ngStyle]="{'margin-left': this.margin+'px'}">
+      <img #img [src]="this.imageurl" (load)="fetchImageSize(img)"  />
+    </div> 
+  </div>
+
+</div>
