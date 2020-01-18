@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-radio-group  allow-empty-selection = "true" name="fileTypeChooser"
+   (ionChange)="filetypeChooserChange($event)">
+    <ion-list-header>
+      <ion-label>Choose file type in which the file should be saved</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>PNG</ion-label>
+      <ion-radio value="PNG"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>JPEG (or JPG)</ion-label>
+      <ion-radio value="JPEG"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>GIF</ion-label>
+      <ion-radio value="GIF"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+  
+  <ion-radio-group  allow-empty-selection = "true" name="sourceTypeChooser"
+  (ionChange)="sourcetypeChooserChange($event)">
+    <ion-list-header>
+      <ion-label>Choose image (or photo) source</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Internal storage</ion-label>
+      <ion-radio value="internalStorage" ></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Weblink</ion-label>
+      <ion-radio value="web"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+  <ion-button expand="block" color="success" (click)="saveSettings()">Save and proceed</ion-button>
+</ion-content>

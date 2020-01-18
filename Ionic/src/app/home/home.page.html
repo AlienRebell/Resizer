@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Main Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form  #form="ngForm" (ngSubmit)="WorkOffData(form)">
+    <ion-item *ngIf="this.sourceType === 'web'">
+      <ion-label position="floating">Enter picture Url</ion-label>
+      <ion-input name="web" [(ngModel)]="this.webAddress" type="text" placeholder="Enter here..." ></ion-input>
+    </ion-item>
+    <ion-item *ngIf="this.sourceType === 'internalStorage'">
+      <p>Button below will open a dialog where you can give an image you want to edit</p>
+      <label class="custom-file-upload">Click here: 
+      <input type="file" name="fileInput" (change)="upload($event)"/></label>
+    </ion-item>
+    <ion-button type="submit" expand="block" color="success">Proceed</ion-button>
+  </form>
+  <ion-button expand="block" routerLink="/settings" color="success">To settings</ion-button>
+</ion-content>
+

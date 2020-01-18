@@ -1,0 +1,36 @@
+input[type="file"]
+{
+    display: none;
+}
+.custom-file-upload
+{
+    background: #3498db;
+    color: white;
+    width: 180px;
+    padding: 8px;
+    border-radius: 3px;
+  
+    p {
+      font-family: 'Roboto'; 
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFF;
+      user-select: none;
+    }
+    
+    &:hover {
+      cursor: pointer;
+      background: #67b1e2;
+    }
+    
+    &:after {
+      content: "";
+      width: 100%;
+      height: 10%;
+      border-radius: 50%;
+      background-color: darken(#f1c40f, 20%);
+      opacity: 0.4;
+      bottom: -30px;
+    }
+  }
+  
